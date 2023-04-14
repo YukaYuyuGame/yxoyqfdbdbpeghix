@@ -1,0 +1,216 @@
+@charset 'UTF-8';
+
+/* Font */
+@font-face {
+	font-family: 'ZenKurenaido';
+	src: url('../resources/ZenKurenaido-Regular.ttf') format('truetype');
+}
+
+@media all {
+	* {
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		background-repeat: no-repeat;
+		font-family: 'ZenKurenaido', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+		margin: 0px;
+		outline: none;
+		/*
+		outline: solid 1px black !important;
+		*/
+		padding: 0px;
+	}
+
+	/* __________________________________________ */
+
+	body {
+		margin: 0 2.5%;
+	}
+
+	/* __________________________________________ */
+
+	div.regions {
+		margin: 8px 0px;
+	}
+
+	/* __________________________________________ */
+
+	div.regions.header {
+		display: flex;
+		justify-content: space-between;
+
+		height: 200px;
+	}
+
+	div.regions.header #logo {
+		cursor: pointer;
+	}
+
+	/* pc */
+	@media (min-width: 851px) {
+		div.regions.header {
+		}
+
+		div.regions.header #logo {
+		}
+
+		div.regions.header .icon {
+			height: 115px;
+			width: 115px;
+		}
+
+		div.regions.header nav.navigator ul {
+			justify-content: right;
+		}
+
+		div.regions.header nav.navigator ul li {
+			padding: 24.5px 10px;
+		}
+		}
+
+		div.regions.header nav.navigator ul li p.text {
+			font-size: larger;
+		}
+	}
+
+	/* mobile */
+	@media (max-width: 850px) {
+		div.regions.header {
+			flex-direction: column;
+		}
+
+		div.regions.header #logo {
+			height: 120px;
+			margin: 0 auto;
+			width: 213px;
+		}
+
+		div.regions.header .icon {
+			height: 90px;
+			width: 90px;
+		}
+
+		div.regions.header nav.navigator ul {
+			justify-content: center;
+		}
+
+		div.regions.header nav.navigator ul li {
+			padding: 5px 10px;
+		}
+	}
+
+	div.regions.header nav.navigator {
+		font-size: large;
+	}
+
+	div.regions.header nav.navigator ul {
+		display: flex;
+		list-style-type: none;
+	}
+
+	div.regions.header nav.navigator ul li a {
+		color: black;
+		display: block;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	div.regions.header nav.navigator ul li a:hover > img.icon {
+		box-shadow: 0px 1px 2px 1px rgba(13, 0, 21, 0.5);
+		-webkit-box-shadow: 0px 1px 2px 1px rgba(13, 0, 21, 0.5);
+		-moz-box-shadow: 0px 1px 2px 1px rgba(13, 0, 21, 0.5);
+	}
+
+	/* __________________________________________ */
+
+	div.regions.main {
+		background-color: #eedfff;
+	}
+
+	div.regions.main ul li {
+		list-style-position: inside;
+		padding-left: 8px;
+	}
+
+	div.regions.main div.contents {
+		padding: 16px 16px 24px 16px;
+	}
+	div.regions.main div.contents.none-top {
+		padding-top: 0px;
+	}
+	div.regions.main div.contents.none-bottom {
+		padding-bottom: 0px;
+	}
+
+	/* _____________________ */
+
+	div.regions.main#qa {
+		height: 700px;
+	}
+
+	div.regions.main#top p {
+		text-align: center;
+		padding: 296px 0;
+	}
+
+	/* _____________________ */
+
+	div.regions.main#qa {
+		height: auto;
+	}
+
+	div.regions.main#qa div.contents#form_url {
+		text-align: center;
+	}
+
+	div.regions.main#qa div.contents#form_url a {
+		font-size: x-large;
+	}
+
+	/* _____________________ */
+
+	div.regions.main#product {
+		height: auto;
+		padding: 16px;
+	}
+
+	div.regions.main#product div.contents p.circle:before {
+		content: 'サークル名: ';
+	}
+
+	div.regions.main#product div.contents p.nickname:before {
+		content: '二つ名: ';
+	}
+
+	div.regions.main#product div.contents p.charge:before {
+		content: '担当: ';
+	}
+
+	div.regions.main#product div.contents p.links:before {
+		content: 'リンク: ';
+	}
+	div.regions.main#product div.contents p.remarks:before {
+		content: '備考: ';
+	}
+
+	/* __________________________________________ */
+
+	div.regions.main#readme {
+	}
+
+	/* __________________________________________ */
+
+	div.regions.main#story {
+		padding: 16px;
+	}
+
+	/* __________________________________________ */
+
+	div.regions.footer {
+	}
+
+	div.regions.footer p#cautionText {
+		font-size: small;
+		text-align: center;
+	}
+}
