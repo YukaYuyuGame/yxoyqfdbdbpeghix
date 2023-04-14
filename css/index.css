@@ -38,8 +38,6 @@
 	div.regions.header {
 		display: flex;
 		justify-content: space-between;
-
-		height: 200px;
 	}
 
 	div.regions.header #logo {
@@ -47,8 +45,9 @@
 	}
 
 	/* pc */
-	@media (min-width: 851px) {
+	@media (min-width: 931px) {
 		div.regions.header {
+			height: 200px;
 		}
 
 		div.regions.header #logo {
@@ -74,7 +73,7 @@
 	}
 
 	/* mobile */
-	@media (max-width: 850px) {
+	@media (max-width: 930px) {
 		div.regions.header {
 			flex-direction: column;
 		}
@@ -82,7 +81,6 @@
 		div.regions.header #logo {
 			height: 120px;
 			margin: 0 auto;
-			width: 213px;
 		}
 
 		div.regions.header .icon {
